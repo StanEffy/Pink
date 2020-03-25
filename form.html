@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Pink</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="inner-page">
+	<header class="page-header inner-page-header">
+		
+		<nav class="main-nav main-nav--closed">
+			<a href="#" class="main-logo">
+				<picture>
+					<source srcset="img/logotype-white-mobile.png" type="" media='(max-width:660px)'>
+					<source srcset="img/logotype-white-tablet.png" type="" media='(max-width:1199px)'>
+					<source srcset="img/logotype-white-desktop.png" type="" >
+					<img src="img/logotype-white-tablet.png" class="logo-nav">
+				</picture>
+			</a>
+			<button class="main-nav__toggle " type="button"><span class='visually-hidden'>Открыть меню</span></button>
+			<ul class="site-nav">
+				<li class="site-nav__items">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="site-nav__items">
+					<a href="photo.html">Фотографии</a>
+				</li>
+				<li class="site-nav__items">
+					<a href="form.html" class="nav-link--active">Конкурс</a>
+				</li>
+				<li class="site-nav__items">
+					<a href="#">HTML Academy</a>
+				</li>
+			</ul>
+		</nav>
+		
+	
+	</header>
+	<main>
+		<h1 class="form-caption photo-caption"><span class="photo-caption__inner form-caption__inner">Конкурс на самое безбашенное путешествие с Пинк</span></h1>
+		<form class="main-form">
+			<p class="main-form__description inner-intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! 
+			<br>Пожалуйста, заполните форму ниже:</p>
+				
+				<fieldset class="main-form__ main-form__name">
+					<ul class="name-list">
+						<li class="name-input-cover">
+							<label for="nameform">Фамилия:</label>
+							<input type="text" name="nameform" placeholder="Укажите фамилию *" id="nameform">
+							
+						</li>
+						<li class="name-input-cover">
+							<label for="apellidoform">Имя:</label>
+							<input type="text" name="apellidoform" placeholder="Введите ваше имя *" id="apellidoform">
+							
+						</li>
+						<li class="name-input-cover">
+							<label for="paternameform">Отчество:</label>
+							<input type="text" name="paternameform" placeholder="Ну и отчество тоже" id="paternameform">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="main-form__radio">
+					<legend class="main-form-legend"><span class="legend-cover">с каким приложением путешестовали?</span></legend>
+					<ul class="main-form__os-list">
+						<li class="os-list-item">
+							<input type="radio" name="os" id="ios" class="visually-hidden" checked="">
+							<label for="ios">Pink for iOS</label>
+						</li>
+						<li class="os-list-item">
+							<input type="radio" name="os" id="android" class="visually-hidden">
+							<label for="android">Pink на Android</label>
+						</li>
+						<li class="os-list-item">
+							<input type="radio" name="os" id="microsoft" class="visually-hidden">
+							<label for="microsoft">Windows Phone</label>
+						</li>
+					</ul>
+				</fieldset>
+			<fieldset class="main-form-contacts">
+				<legend class="main-form-legend"><span class="legend-cover">Контактная информация</span></legend>
+				<ul class="form-contacts-list">
+					<li class="form-contacts-list__item">
+						<label for="phone">Номер телефона</label>
+						<div class="form-phone__cover"><input type="text" name="phone" id="phone" placeholder="Номер, Пожалуйста"></div>
+						
+					</li>
+					<li class="form-contacts-list__item">
+						<label for="email">Адрес почты</label>
+						<div class="form-email__cover"><input type="text" name="email" id="email" placeholder="Введите почту *"></div>
+						
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="main-form-checkbox">
+				<legend class="main-form-legend"><span class="legend-cover">Ваши безбашенные достижения в путешествии</span></legend>
+				<ul class="checkbox-list">
+					<li class="checkbox-list__item">
+						<input type="checkbox" name="shark" checked="" class="visually-hidden" id="shark">
+						<label for="shark">Сделал селфи с акулой</label>
+					</li>
+					<li class="checkbox-list__item">
+						<input type="checkbox" name="norris" id="norris" class="visually-hidden" id="norris">
+						<label for="norris">Видел Чака Норисса</label>
+					</li>
+					<li class="checkbox-list__item" >
+						<input type="checkbox" name="tower" checked="" class="visually-hidden" id="tower">
+						<label for="tower">Удержал башню</label>
+					</li>
+					<li class="checkbox-list__item">
+						<input type="checkbox" name="overtanned" checked="" class="visually-hidden" id="overtanned">
+						<label for="overtanned">Обгорел на пляже</label>
+					</li>
+					<li class="checkbox-list__item">
+						<input type="checkbox" name="souvenirs" class="visually-hidden" id="souvenirs">
+						<label for="souvenirs">Накупил сувениров</label>
+					</li>
+					<li class="checkbox-list__item">
+						<input type="checkbox" name="hotel" class="visually-hidden" id="hotel">
+						<label for="hotel">Разгромил отель</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="main-form-story">
+				<legend class="main-form-legend"><span class="legend-cover">Опишите свои эмоции</span></legend>
+				<div class="textarea-wrapper"><textarea class='story-textarea' placeholder='Можно пр-ям в красках, не стесняясь в выражениях'></textarea></div>
+			</fieldset>
+			<div class="form-button-cover">
+				<button type="submit" class="form-button">Отправить форму</button>
+				<p class="footnote"><span class="footnote-colored">*</span> — Обязательные <span class="hide">для заполнения </span>поля</p>
+			</div>
+		</form>
+		
+	</main>
+	<footer class="main-footer">
+		<a href="#">
+			<picture>
+				<source srcset="img/logotype-blue-tablet.png" type="" media='(min-width:660px)'>
+				<source srcset="img/logotype-blue-desktop.png" type="" media='(min-width:1200px)'>
+				<img src="img/logotype-blue-tablet.png" class="footer-logo">
+			</picture>
+		</a>
+		<ul class="footer-social">
+			<li class="social__item">
+				<a href="#" class="footer-social__link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18"><image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAdklEQVQokdWOsQ2AMBADj4gBMgIlJSPAEqwRmACYiBHICBETIVCCniiRKGhwZb1Pfhd73SM0AAao5LEUfgYmElLiZFKAbGoAHWULYCUUA3jghlrfFEv77IK2zJQ1GJUBHnoFne867+O3I+ACZDMFLmTfbfonBBypYw2/NKvu/gAAAABJRU5ErkJggg=="/></svg></a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="footer-social__link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14"><image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA40lEQVQokZ2TwREBQRBFnykBbAiObjYEGeDiTASIABEgAjJABISgJEAGhKA+3WpqsYNftZeZ3jf/9/RUjvVuxkNXyjUBBoDX74EO0NRaAIbADshLMEtgHEEwwAVYA41gi7nBhm8g2usl3LZDFEmnzYCT/VjzogTkoIhVyxqrZlGwQ1K92woWLPun4ixy9kl3I8GIWaK4TFcHrez7R2frEX5rC1v8VRuvd9D5z3iLIkg5+z+6msb1DpJkc/QlTD3Vk3lKc6QR1/Smrtmdy8m8uCGQIml6W/4A3wA0KxoTOXmdOeAGlKEtkFljNbgAAAAASUVORK5CYII="/></svg></a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="footer-social__link"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13"><image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="/></svg></a>
+			</li>
+		</ul>
+		<div class="footer-academy__cover">
+      		<p class="footer-nav__academy">Разработано</p> 
+      		<a href="academy"><img src="img/logo-html.png" width="27" height="35" class="academy-img"></a>
+    	</div>
+	</footer>
+	<script type="text/javascript">
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+</body>
+</html>
